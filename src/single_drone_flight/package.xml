@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>single_drone_flight</name>
+  <version>1.0.0</version>
+  <description>Simple ROS2 package to fly a single drone to 5 meters height using PX4 offboard control</description>
+  <maintainer email="user@example.com">user</maintainer>
+  <license>BSD-3</license>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  
+  <depend>px4_msgs</depend>
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>ros2launch</exec_depend>
+  
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
